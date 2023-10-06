@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:is(.dark .dark\:bg-slate-950) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 23 / var(--tw-bg-opacity)) !important;
+}
+
+.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    color: var(--tw-prose-links);
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.prose {
+    --tw-prose-body: #474747;
+    --tw-prose-headings: #181818;
+    --tw-prose-lead: #474747;
+    --tw-prose-bold: #181818;
+    --tw-prose-hr: #c0c0c0;
+    --tw-prose-invert-body: #f2f2f2;
+    --tw-prose-invert-headings: #fff;
+    --tw-prose-invert-lead: #f2f2f2;
+    --tw-prose-invert-bold: #fff;
+    --tw-prose-invert-hr: #c0c0c0;
+    font-size: 1rem;
+    line-height: 1.75;
+}
