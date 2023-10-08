@@ -6,7 +6,7 @@ export default function Home() {
   const sortedPosts = allPosts.sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
-    return dateB - dateA;
+    return dateB.getTime() - dateA.getTime();
   });
 
   return (
