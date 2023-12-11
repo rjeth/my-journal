@@ -31,7 +31,6 @@ export async function generateMetadata({ params }: PostProps): Promise<Metadata>
   return {
     title: post.title,
     description: post.description,
-    category: post.category,
   };
 }
 
