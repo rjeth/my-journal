@@ -12,14 +12,16 @@ export default function Home() {
   return (
     <div className="prose dark:prose-invert">
       For Maintenance! Will be back soon.
-      {/* {sortedPosts.map((post) => (
+      {sortedPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
-            <h2>{post.title}</h2>
+            <h2>
+              {post.title} <p className="ml-3 hidden whitespace-nowrap rounded-lg bg-slate-100 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-700 lg:block">{post.category}</p>
+            </h2>
           </Link>
           {post.description && <p>{post.description}</p>}
         </article>
-      ))} */}
+      ))}
     </div>
   );
 }
