@@ -11,14 +11,15 @@ export default function Home() {
 
   return (
     <div className="prose dark:prose-invert">
-      {sortedPosts.map((post) => (
+      For Maintenance! Will be back soon.
+      {/* {sortedPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
             <h2>{post.title}</h2>
           </Link>
           {post.description && <p>{post.description}</p>}
         </article>
-      ))}
+      ))} */}
     </div>
   );
 }
